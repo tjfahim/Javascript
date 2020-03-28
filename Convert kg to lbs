@@ -1,0 +1,5 @@
+alert("HELLO BOSS")
+alert("You can convert your weight kg to lbs")
+var kg=prompt("Enter your weight")
+alert("The kg = "+ kg +"are converted to lbs = "+kg*0.454)
+console.log("You are awesome,converted completed to kg = "+kg +"to lbs = " + kg*0.454 );
