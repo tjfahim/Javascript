@@ -1,0 +1,34 @@
+var roster = []
+function add() {
+  var newName = prompt("Ehat name would you like to add")
+  roster.push(newName)
+}
+function remove() {
+  var removeName = prompt("Would you like to remove?")
+  var index= roster.indexof(removeName);
+  roster.splice(index,1)
+}
+function display() {
+  console.log(roster)
+}
+var start = prompt("Would you like to start roster web app ? y/n ")
+var req="empty"
+if(start === 'y'){
+  while (req !=="quit") {
+    req = prompt("Plese select an action : add,remove,display, or quit. ")
+    if (req ==='add') {
+      add();
+    }else if (req === 'remove') {
+      remove();
+    }else if (req === 'display') {
+      display();
+    }else if (req === 'quit') {
+      quit();
+    }else {
+      alert("Not recognized")
+
+    }
+  }
+
+}
+alert("Thanks for using the web app! Plese refresh to star over! ")
